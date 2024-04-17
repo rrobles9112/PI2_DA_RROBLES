@@ -136,4 +136,4 @@ Basándonos en las observaciones y datos analizados sobre los accidentes de trá
 
 ## **Visualización**
 
-Puede ingresar a este [link](https://app.powerbi.com/view?r=eyJrIjoiYmFkZmM0NzYtOTcxZC00NmYyLWExZmMtMTY5MGQ1MzJmODJlIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9) para poder visualizar el Dashboard interactivo creado en Power BI.
+Puede ingresar a este [link](https://app.powerbi.com/view?r=eyJrIjoiNWEyZWFiZDQtMWQ2MC00Zjk1LTgwOTEtOGJlM2JjZDU4ZmNlIiwidCI6IjFlOWFhYmU4LTY3ZjgtNGYxYy1hMzI5LWE3NTRlOTI0OTlhZSIsImMiOjR9) para poder visualizar el Dashboard interactivo creado en Power BI.
