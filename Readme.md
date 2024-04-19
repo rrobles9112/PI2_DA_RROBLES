@@ -18,7 +18,7 @@ Por lo tanto, el Observatorio de Movilidad y Seguridad Vial (OMSV), un centro de
 
 # **Datos**
 Los datos utilizados en este análisis fue extraído de la página de ``Buenos Aires Data`` , éstos abarcan siniestros viales desde el año 2016 hasta el 2021 incluyendo información sobre víctimas, vehículos involucrados, lugar del echo, entre otros.<p>
-- En este [Diccionario de datos](./Diccionario%20de%20datos/Diccionario%20Datos%20Homicidio.xlsx) puede visualizar todas las definiciones de las variables del dataset.
+- En este [Diccionario de datos](./Homicidio.xlsx) puede visualizar todas las definiciones de las variables del dataset.
 - Puede ingresar a la página donde se obtuvo los datos haciendo click [aquí](https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales).
 
 
@@ -54,11 +54,11 @@ El primer paso que se realizó fue la de extraer los datos del archivo ``.xlsx``
 Una vez hecho ésto, se analizó la información general de los datos, tanto como cantidad de registros, valores faltantes, cantidad de variables y duplicados. En base a esto se realizó una limpieza y modificación en los registros y tambien en los nombres de las columnas, para un mejor entendimiento de los datos.<br>
 Además, se implemento la técnica de ``Web Scraping`` a la **API** de ``Buenos Aires BA DATA`` para poder obtener los datos de los Barrios donde ocurrió el siniestro en base a los datos de Latitud y Longitud que nos brindaba el dataset, y a la página de **Wikipedia** para poder extraer la cantidad de población en la Ciudad Autónoma de Buenos Aires según los censos del 2010 y 2022, ya que para poder generar uno de los KPIs solicitados, era necesario obtener esta información.
 
-> Puede ingresar a este [documento](./Notebooks/EDA.ipynb) para poder ver el paso a paso del EDA.<br>
-Tambien puede ver como se realizo la técnica de Web Scraping en este [archivo](./Notebooks/Datos%20complementearios.ipynb).
+> Puede ingresar a este [documento](./EDA_ETL.ipynb) para poder ver el paso a paso del EDA.<br>
+Tambien puede ver como se realizo la técnica de Web Scraping en este [archivo](./Datos_complementarios.ipynb).
 
 ## **Creación de Base de Datos**
-Luego del punto anterior, se creo una *BASE DE DATOS* en ``MySQL Workbench`` para poder normalizar el dataset y asi poder conectarlo a ``Power BI``. En este caso, creamos 11 tablas:
+Luego del punto anterior, se creo una *BASE DE DATOS* en ``Postgres`` para poder normalizar el dataset y asi poder conectarlo a ``Power BI``. En este caso, creamos 11 tablas:
 - **Homicidios_hechos**: *Registros de homicidios por siniestros viales.*
 - **Homicidios_victimas**: *Registros de las víctimas por siniestro viales.*
 - **Barrios**: *Barrios donde ocurrió el siniestro.*
